@@ -1,0 +1,6 @@
+{
+  "name": "체리홈타이 - 용인출장마사지",
+  "description": "용인출장마사지 전문 체리홈타이. 100% 후불제, 선입금 없음, 24시간 365일 연중무휴, 평균 30분 내외 빠른 방문.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
