@@ -2,5 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://massage-platform.yongincherry.workers.dev/sitemap.xml
-
 Host: massage-platform.yongincherry.workers.dev
