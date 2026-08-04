@@ -1,9 +1,34 @@
+import cherryHomeThaiImage from './src/assets/cherryhomethai.png';
+
 /**
  * 체리홈타이 - 용인출장마사지 Interactive Script (script.js)
  * Vanilla JS - No external libraries required.
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  const heroBackgroundImage = document.getElementById('heroBackgroundImage');
+
+  if (!heroBackgroundImage) {
+    throw new Error('heroBackgroundImage 요소가 없습니다.');
+  }
+
+  heroBackgroundImage.src = cherryHomeThaiImage;
+
+  heroBackgroundImage.addEventListener('load', () => {
+    console.log('HERO IMAGE SUCCESS', {
+      currentSrc: heroBackgroundImage.currentSrc,
+      naturalWidth: heroBackgroundImage.naturalWidth,
+      naturalHeight: heroBackgroundImage.naturalHeight
+    });
+  });
+
+  heroBackgroundImage.addEventListener('error', () => {
+    console.error(
+      'HERO IMAGE FAILED',
+      heroBackgroundImage.currentSrc
+    );
+  });
+
   // 1. Mobile Menu Toggle
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const navMenu = document.getElementById('navMenu');

@@ -30,7 +30,7 @@
   <meta property="og:title" content="용인출장마사지 100%후불제 24시 체리홈타이">
   <meta property="og:description" content="선입금 없는 100% 후불제 용인출장마사지! 24시간 365일 연중무휴, 평균 30분 내외 신속 방문. 타이, 스웨디시, VIP 케어 전문.">
   <meta property="og:url" content="https://massage-platform.yongincherry.workers.dev/">
-  <meta property="og:image" content="https://massage-platform.yongincherry.workers.dev/cherryhomethai.png">
+  <meta property="og:image" content="https://massage-platform.yongincherry.workers.dev/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="ko_KR">
@@ -39,7 +39,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="용인출장마사지 100%후불제 24시 체리홈타이">
   <meta name="twitter:description" content="선입금 사기 걱정 없는 100% 후불제 용인출장안마 전문 체리홈타이. 24시간 언제든 신속 방문.">
-  <meta name="twitter:image" content="https://massage-platform.yongincherry.workers.dev/cherryhomethai.png">
+  <meta name="twitter:image" content="https://massage-platform.yongincherry.workers.dev/og-image.png">
   
   <!-- Pure External CSS -->
   <link rel="stylesheet" href="style.css">
@@ -220,7 +220,16 @@
   <main id="main-content">
     <!-- Hero Section -->
     <section class="hero-section" id="hero">
-      <div class="container hero-grid">
+      <img
+        id="heroBackgroundImage"
+        class="hero-background-image"
+        alt=""
+        aria-hidden="true"
+      >
+
+      <div class="hero-background-overlay" aria-hidden="true"></div>
+
+      <div class="hero-inner container hero-grid">
         <div class="hero-content">
           <div class="hero-tag">
             <span>🍒 100% 후불제 프리미엄 출장 케어</span>
@@ -264,10 +273,6 @@
         </div>
 
         <div class="hero-card">
-          <!-- Mobile Only Image Above 체리홈타이 안심 약속 -->
-          <div class="mobile-hero-img-box">
-            <img src="cherryhomethai.png" alt="체리홈타이 용인출장마사지 전문 관리사가 방문 마사지 서비스를 제공하는 모습" width="1200" height="630" loading="eager" decoding="async">
-          </div>
           <div class="hero-card-header">
             <h3>🍒 체리홈타이 안심 약속</h3>
           </div>
@@ -977,6 +982,6 @@
   <div id="toastNotice" class="toast-notice" role="alert" aria-live="polite"></div>
 
   <!-- Pure External JavaScript -->
-  <script src="script.js" defer></script>
+  <script type="module" src="script.js"></script>
 </body>
 </html>
